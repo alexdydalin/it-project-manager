@@ -1,0 +1,31 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+Последние вакансии
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+	<h2>Последние вакансии</h2>
+	<p>Список вакансий с hh.ru за 2022.12.19, отсортированны по времени публикации</p>
+	
+	{% for info in all_info %}
+
+		<div class="job__contanier">
+			<p><b>Название вакансии:</b> {{ info.name }}</p>
+			<p><b>Описание:</b> {{ info.description }}</p>
+			<p><b>Ключевые навыки:</b> {{ info.key_skills }}</p>
+			<p><b>Компания:</b> {{ info.employer }}</p>
+			<p><b>Заработная плата:</b> {{ info.salary }}</p>
+			<p><b>Город:</b> {{ info.area_name }}</p>
+			<p><b>Опубликовано:</b> {{ info.published_at }}</p>
+		</div>
+
+	{% endfor %}
+
+</div>
+{% endblock %}

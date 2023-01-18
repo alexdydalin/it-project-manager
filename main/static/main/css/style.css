@@ -1,0 +1,239 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+.header{
+	display: flex;
+	position: fixed;
+	margin: auto;
+    height: auto;
+	background: #282828;
+	/* family: */
+	width: 100%; /* ширина 100% */
+	height: 65px;
+}
+
+
+.header__logo{
+	border-radius: 10px;
+	height: 45px;
+	width: 45px;
+	margin: 10px 15px 10px 10px;
+	background-color: #fff;
+	color: #282828;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+
+.header__logo p{
+	color: #282828;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+
+}
+
+
+.header__sign{
+	width: 87.5%;
+	text-align:center;
+	padding: auto;
+}
+
+
+.header__sign p{
+	text-align:center;
+	font-size: 20px;
+	margin: 0px;
+	padding-top: 25px;
+	color: #fff;
+}
+
+
+
+
+.menu{
+	display: flex;
+}
+
+
+.menu__logo{
+	font-size: 45px;
+	height: 45px;
+	width: 45px;
+	display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+	margin: 0px 0px 0px 0px; /* верх право низ лево */
+	padding: 7.5px 0px 0px 0px; /* верх право низ лево */
+	color: #fff;
+	cursor: pointer;	
+}
+
+
+.menu li{
+	width: 45px;
+	list-style: none;
+	position: relative;
+}
+
+
+.menu a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 0 10px;
+	line-height: 40px;
+	height: 40px;
+	transition: all .5s;
+}
+
+
+.menu ul{
+	position: absolute;
+	list-style: none; /* Для списка убираем маркеры */
+	left: 0;
+	top: 100%;
+	padding: 0;
+}
+
+
+.menu li ul {
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: -4px; /* Сдвигаем подменю вправо */ 
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+.menu li a {
+	display: block; /* Ссылка как блочный элемент */
+	padding: 8px; /* Поля вокруг надписи */
+	text-decoration: none; /* Подчеркивание у ссылок убираем */
+    color: #fff; /* Цвет текста */
+    background-color: #282828;
+    border-bottom: none; /* Границу снизу не проводим */
+    width: 150px; 
+    text-align: left;
+}
+
+
+.menu li a:hover {
+	color: #282828; /* Цвет текста активного пункта */
+	background-color: #fff; /* Цвет фона активного пункта */
+}
+
+
+.menu li:hover ul {
+
+	display: block;
+}
+
+
+
+
+.container{
+	padding-top: 75px;
+	margin-left:27%; /* отступ слева 25%*/
+    margin-right:27%; /* отступ спарва 25%*/
+    height: 100%; /* высота по содержанию */
+    font-size: 20px;
+    /** background-color: rgba(0,0,0,0.75); /* затемнение */
+    /** background-blend-mode: darken; /* затемнение */ 
+    /** padding-bottom: 2%; /* отступ снизу 2% */
+}
+
+
+.container img{
+	max-width: 100%; /* размер */
+ 	margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+
+
+
+.highlighted__information{
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.1); /* затемнение */
+    background-blend-mode: darken; /* затемнение */ 
+    padding:1% 6% 1% 6%; /* верх право низ лево */
+}
+
+
+
+.chart__container p{
+	padding-right: 160px;
+	padding-bottom: 15px;
+	margin: 0;
+	
+}
+
+
+.table__section p{
+	padding-right: 160px;
+	padding-bottom: 15px;
+	margin-top: 20px;
+}
+
+
+table { /* для таблицы */
+	width:100%;
+	background:#A5A5A5; /* всего цвет фона */ 
+	color:#000; /* цвет текста */ 
+	margin-top: 40px;
+}
+
+table th, td {
+	background:#E5E5E5; /* цвет фона ячеек*/ 
+	padding: 5px;
+	text-align: left;
+	width: auto;
+}
+
+
+
+.job__contanier{
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.1); /* затемнение */
+    background-blend-mode: darken; /* затемнение */ 
+    padding:1% 4% 1% 4%; /* верх право низ лево */
+    margin: 3% 4% 3% 4%; /* верх право низ лево */
+}
+
+
+.job__contanier p{
+	
+}
+
+
+
+.footer{
+	width: 100%;
+	margin-top: 30px;
+    background-color: #282828;
+	height: 65px;
+
+}
+
+
+.footer p{
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding-top: 20px;
+	color: #fff;
+	font-size: 18px;
+}
